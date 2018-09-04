@@ -11,7 +11,6 @@ export default ({data}) => (
             <meta name="description" content="The best tech byte for your business"/>
             <meta name="keywords" content="business technology, technology solutions, it projects, systems review, problem solving"/>
         </Helmet>
-        Sill here?
         <Script url="https://paperform.co/__embed" />
         <div data-paperform-id="mmgyqlli" data-takeover="1"></div>
     </div>
