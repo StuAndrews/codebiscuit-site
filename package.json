@@ -13,6 +13,7 @@
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-typography": "^1.7.19",
     "react-helmet": "^5.2.0",
+    "react-load-script": "0.0.6",
     "react-obfuscate": "^2.1.7",
     "typography-theme-lincoln": "^0.15.11"
   }
