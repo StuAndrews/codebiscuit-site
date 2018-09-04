@@ -18,8 +18,6 @@ export default ({data}) => (
         <p>At Code Biscuit we provide you with the technology smarts to <strong>achieve your goals</strong>, <strong>realise your dreams</strong> and <strong>turn your ideas into reality</strong>.</p>
         <p>In other words we help you <strong>build and maintain your projects</strong>, <strong>develop solutions to existing problems</strong> and provide <strong>analysis</strong>, <strong>review</strong>, <strong>recommendations</strong> (ways forward) and <strong>reporting</strong> on your business technology processes.</p>
         <p>A critical element of the service that we provide is to stay abreast of the rapidly evolving technology world. We stay up-to-date with the most effective and efficient advancements and enhancements that come with this change.</p>
-        <p></p>
-        <p>We'd love to hear from you! Please contact Stu Andrews at <Obfuscate email="stu.andrews@codebiscuit.com" headers={{ subject: 'Code Biscuit Enquiry'}}/>.</p>
     </div>
 );
 
