@@ -28,10 +28,10 @@ const Layout = ({ children }) => (
             { name: 'keywords', content: 'business technology, technology solutions, it project, systems review, problem solving' },
           ]}
         >
-          <html lang="en" />
-          <script type="text/javascript" dangerouslySetInnerHTML={{__html: `function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()`, }}/>
+          <html lang="en"/> 
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
+        <div as="script" dangerouslySetInnerHTML={{__html: `<script>function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>`, }}></div>
         <div
           style={{
             margin: '0 auto',
