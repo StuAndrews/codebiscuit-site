@@ -2,8 +2,6 @@ import React from "react";
 import Layout from "../components/layout";
 import Script from "react-load-script";
 import Img from "gatsby-image";
-import imageOne from '../images/helloquence-61189-unsplash.jpg';
-import imageTwo from '../images/james-pond-185593-unsplash.jpg';
 
 //let loadPaperForm = '<script type="text/javascript">(function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>';
 let stylePhotoAttr = {
