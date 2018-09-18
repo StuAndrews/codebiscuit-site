@@ -1,9 +1,9 @@
+const path = require('path');
+
 module.exports = {
     siteMetadata: {
         title: 'Code Biscuit',
         siteUrl: 'https://codebiscuit.com',
-        description: 'The best tech byte for your business',
-        keywords: 'business technology, technology solutions, it project, systems review, problem solving',
     },
     plugins: [
         {
@@ -12,6 +12,15 @@ module.exports = {
                 pathToConfigModule: 'src/utils/typography.js',
             },
         },
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'images',
+                path: path.join(__dirname, 'src', 'images')
+            }
+        },
         'gatsby-plugin-react-helmet',
+        'gatsby-transformer-sharp',
+        'gatsby-plugin-sharp',
     ],
 };
