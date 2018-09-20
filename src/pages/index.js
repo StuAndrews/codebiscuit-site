@@ -35,7 +35,7 @@ export default ({data}) => (
                 <a href={urlImageTwo}><Img fluid={data.image2.childImageSharp.fluid} alt="Photo by James Pond"/></a>
                 <br/>Photo by James Pond
             </p>
-            <div style={styleBigText}>We'd love to hear from you!</div>
+            <h2>We'd love to hear from you!</h2>
             <p style={stylePhotoAttr}>
                 <a href={urlImageThree}><Img fluid={data.image3.childImageSharp.fluid} alt="Photo by Jason Rosewell"/></a>
                 <br/>Photo by Jason Rosewell
