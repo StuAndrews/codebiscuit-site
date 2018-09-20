@@ -30,7 +30,7 @@ const Layout = ({ children }) => (
         >
           <html lang="en"/> 
         </Helmet>
-        <div as="script" dangerouslySetInnerHTML={{__html: `<script type="text/javascript">(function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>`, }}></div>
+        <div dangerouslySetInnerHTML={{__html: `<script type="text/javascript">(function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>`, }}></div>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{

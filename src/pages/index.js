@@ -31,9 +31,9 @@ export default ({data}) => (
                 <a href={urlImageTwo}><Img fluid={data.image2.childImageSharp.fluid} alt="Photo by James Pond"/></a>
                 <br/>Photo by James Pond
             </p>
-            <Script url="https://paperform.co/__embed" />
-            <div data-paperform-id="mmgyqlli"></div>
         </div>
+        <Script url="https://paperform.co/__embed" />
+        <div data-paperform-id="mmgyqlli"></div>
     </Layout>
 );
 
