@@ -9,9 +9,15 @@ let stylePhotoAttr = {
     textAlign: 'center',
     fontSize: '14px',
 }
+let styleBigText = {
+    fontStyle: 'normal',
+    textAlign: 'left',
+    fontSize: '36px',
+}
 
 let urlImageOne = 'https://unsplash.com/photos/5fNmWej4tAA';
 let urlImageTwo = 'https://unsplash.com/photos/1qkyck-UL3g';
+let urlImageThree = 'https://unsplash.com/photos/ASKeuOZqhYU';
 
 export default ({data}) => (
     <Layout>
@@ -30,6 +36,11 @@ export default ({data}) => (
             <p style={stylePhotoAttr}>
                 <a href={urlImageTwo}><Img fluid={data.image2.childImageSharp.fluid} alt="Photo by James Pond"/></a>
                 <br/>Photo by James Pond
+            </p>
+            <div style={styleBigText}>We'd love to hear from you!</div>
+            <p style={stylePhotoAttr}>
+                <a href={urlImageThree}><Img fluid={data.image3.childImageSharp.fluid} alt="Photo by Jason Rosewell"/></a>
+                <br/>Photo by Jason Rosewell
             </p>
         </div>
         <Script url="https://paperform.co/__embed" />
@@ -53,6 +64,9 @@ export const query = graphql`
             ...rectImage
         }
         image2:file(relativePath: { eq: "james-pond-185593-unsplash.jpg" }) {
+            ...rectImage
+        }
+        image3:file(relativePath: { eq: "jason-rosewell-60014-unsplash.jpg" }) {
             ...rectImage
         }
     }
