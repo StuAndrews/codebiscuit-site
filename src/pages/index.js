@@ -10,8 +10,6 @@ let stylePhotoAttr = {
     fontSize: '14px',
 }
 let styleBigText = {
-    fontStyle: 'normal',
-    textAlign: 'left',
     fontSize: '36px',
 }
 
