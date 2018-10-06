@@ -24,8 +24,7 @@ export default ({data}) => (
                 <a href={urlImageOne}><Img fluid={data.image1.childImageSharp.fluid} alt="Photo by Ali Yahya"/></a>
                 <br/>Photo by Ali Yahya
             </p>
-            <p>In othing words we help you <strong>build and maintain your projects</strong>, <strong>develop solutions to existing problems</strong> and provide <strong>analysis</strong>, <strong>review</strong>, 
-                <strong>recommendations</strong> (ways forward) and <strong>reporting</strong> on your business technology processes.</p>
+            <p>In othing words we help you <strong>build and maintain your projects</strong>, <strong>develop solutions to existing problems</strong> and provide <strong>analysis</strong>, <strong>review</strong>, <strong>recommendations</strong> (ways forward) and <strong>reporting</strong> on your business technology processes.</p>
             <p style={stylePhotoAttr}>
                 <a href={urlImageTwo}><Img fluid={data.image2.childImageSharp.fluid} alt="Photo by Elevate"/></a>
                 <br/>Photo by Elevate
