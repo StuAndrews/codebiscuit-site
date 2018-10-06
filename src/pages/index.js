@@ -39,7 +39,8 @@ export default ({data}) => (
             <h2>We'd love to hear from you!</h2>
             <p style={stylePhotoAttr}>
                 <a href={urlImageFour}><Img fluid={data.image4.childImageSharp.fluid} alt="Photo by Jason Rosewell"/></a>
-                <br/>Photo by Jason Rosewell
+                <br/>
+                Photo by Jason Rosewell
             </p>
         </div>
         <Script url="https://paperform.co/__embed" />
