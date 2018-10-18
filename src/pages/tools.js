@@ -12,7 +12,7 @@ export default ({data}) => (
             <p>The world around us is growing technology at an incredible rate, and it should not be on your shoulders
                 to stress and worry about which tools are the best to help your business.
             </p>
-            <p>At CodeBiscuit we border on paranoia in our dedication to keep up to date with the best tools
+            <p>At CodeBiscuit we are dedicated to monitoring and keeping track of the best tools
                  in the marketplace. We keep our ears to the ground of news feeds from across the world, listening
                  and for that new startup or existing company release. We study and research every single day
                  what the tech world is up to.
@@ -20,6 +20,10 @@ export default ({data}) => (
             <p>
                 As well, it is not enough just to know about the best tools. You have to be able to use them,
                 and use them well.
+            </p>
+            <p>
+                What we provide at CodeBiscuit is the wisdom to choose the right tools and the help and training in them to bring the greatest
+                 benefit to your business.
             </p>
         </div>
     </Layout>
