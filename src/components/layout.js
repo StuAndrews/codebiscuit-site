@@ -21,17 +21,16 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
+      <React.Fragment>
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
             { name: 'description', content: 'The best tech byte for your business' },
-            { name: 'keywords', content: 'business technology, technology solutions, it project, systems review, problem solving' },
+            { name: 'keywords', content: 'business technology, data hunters, training, technology solutions, it project, systems review, problem solving' },
           ]}
         >
           <html lang="en"/> 
         </Helmet>
-        <div dangerouslySetInnerHTML={{__html: `<script type="text/javascript">(function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>`, }}></div>
         <Header />
         <div
           style={{
@@ -44,7 +43,7 @@ const Layout = ({ children }) => (
           {children}
         </div>
         <Footer />
-      </>
+      </React.Fragment>
     )}
   />
 )
@@ -64,7 +63,7 @@ fragment postImage on File {
 }
 fragment logoImage on File {
     childImageSharp {
-        fluid(maxWidth: 150) {
+        fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid
         }
     }
