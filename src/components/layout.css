@@ -5,6 +5,14 @@
     font-weight: bold;
 }
 
+.menu1 a:hover {
+    color: #615CA5 !important;
+}
+
+.menu1 li:hover {
+    color: #615CA5 !important;
+}
+
 @media (max-width: 1024px) {
     .headingDescription {
         display: none;
