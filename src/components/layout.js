@@ -4,6 +4,7 @@ import Helmet from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
+import Footer from "./footer";
 import "./layout.css";
 
 //let loadPaperForm = '<script type="text/javascript">(function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>';
@@ -31,7 +32,7 @@ const Layout = ({ children }) => (
           <html lang="en"/> 
         </Helmet>
         <div dangerouslySetInnerHTML={{__html: `<script type="text/javascript">(function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>`, }}></div>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header />
         <div
           style={{
             margin: '0 auto',
@@ -42,6 +43,7 @@ const Layout = ({ children }) => (
         >
           {children}
         </div>
+        <Footer />
       </>
     )}
   />
@@ -49,6 +51,31 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+};
+
+export const images = graphql`
+fragment postImage on File {
+    childImageSharp {
+        fluid(maxWidth: 1280) {
+            ...GatsbyImageSharpFluid
+        }
+        
+    }
 }
+fragment logoImage on File {
+    childImageSharp {
+        fluid(maxWidth: 150) {
+            ...GatsbyImageSharpFluid
+        }
+    }
+}
+fragment footerImage on File {
+  childImageSharp {
+      fluid(maxWidth: 2480) {
+          ...GatsbyImageSharpFluid
+      }
+  }
+}
+`;
 
 export default Layout

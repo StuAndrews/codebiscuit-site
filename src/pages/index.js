@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import Script from "react-load-script";
+import { graphql } from "gatsby";
 import Img from "gatsby-image";
 
 //let loadPaperForm = '<script type="text/javascript">(function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>';
@@ -39,8 +40,7 @@ export default ({data}) => (
             <h2>We'd love to hear from you!</h2>
             <p style={stylePhotoAttr}>
                 <a href={urlImageFour}><Img fluid={data.image4.childImageSharp.fluid} alt="Photo by Jason Rosewell"/></a>
-                <br/>
-                Photo by Jason Rosewell
+                <br/>Photo by Jason Rosewell
             </p>
         </div>
         <Script url="https://paperform.co/__embed" />
@@ -48,29 +48,19 @@ export default ({data}) => (
     </Layout>
 );
 
-export const rectImage = graphql`
-fragment rectImage on File {
-    childImageSharp {
-        fluid(maxWidth: 1280) {
-            ...GatsbyImageSharpFluid
-        }
-    }
-}
-`;
-
 export const query = graphql`
-    query {
+    query PostImagesQuery {
         image1:file(relativePath: { eq: "ali-yahya-707983-unsplash.jpg" }) {
-            ...rectImage
+            ...postImage
         }
         image2:file(relativePath: { eq: "elevate-755041-unsplash.jpg" }) {
-            ...rectImage
+            ...postImage
         }
         image3:file(relativePath: { eq: "james-pond-185593-unsplash.jpg" }) {
-            ...rectImage
+            ...postImage
         }
         image4:file(relativePath: { eq: "jason-rosewell-60014-unsplash.jpg" }) {
-            ...rectImage
+            ...postImage
         }
     }
 `;
