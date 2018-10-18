@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, graphql, StaticQuery } from "gatsby";
 import Img from "gatsby-image";
+import ReactTooltip from 'react-tooltip';
 
 const Header = () => (
   <StaticQuery
@@ -43,14 +44,14 @@ const Header = () => (
                       <Img fluid={data.imageLogo.childImageSharp.fluid} alt={link.name}/>
                     </Link>
                     </div>
-                    <div style={{ textAlign: 'center', color: '#ccc', }}>{link.description}</div>
+                    <div style={{ textAlign: 'center', color: '#ccc', }} class="headingDescription">{link.description}</div>
                   </li>
                   </React.Fragment>
                 } else {
-                  return <li key={link.name} style={{ 'listStyleType': 'none', paddingLeft: 5, }}>
+                  return <li key={link.name} style={{ 'listStyleType': 'none', paddingLeft: 5, }} >
                     <Link to={link.link} style={{ textDecoration: 'none', color: 'white', }}>{link.name}</Link>
                     <br/>
-                    <p style={{color: '#ccc', }}>{link.description}</p>
+                    <p style={{color: '#ccc', }} class="headingDescription">{link.description}</p>
                   </li>
                 }
               })

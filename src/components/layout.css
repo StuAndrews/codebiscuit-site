@@ -4,3 +4,9 @@
 .menu1 a {
     font-weight: bold;
 }
+
+@media (max-width: 1024px) {
+    .headingDescription {
+        display: none;
+    }
+}

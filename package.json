@@ -21,6 +21,7 @@
     "react-helmet": "^5.2.0",
     "react-load-script": "0.0.6",
     "react-obfuscate": "^2.1.10",
+    "react-tooltip": "^3.9.0",
     "react-typography": "^0.16.13",
     "typography": "^0.16.17",
     "typography-theme-funston": "^0.15.10"
