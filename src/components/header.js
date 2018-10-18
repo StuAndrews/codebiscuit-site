@@ -51,7 +51,7 @@ const Header = () => (
                   return <li key={link.name} style={{ 'listStyleType': 'none', paddingLeft: 5, }} >
                     <Link to={link.link} style={{ textDecoration: 'none', color: 'white', }}>{link.name}</Link>
                     <br/>
-                    <p style={{color: '#ccc', }} class="headingDescription">{link.description}</p>
+                    <p style={{color: '#ccc', }} class="headingDescription">{link.description} </p>
                   </li>
                 }
               })
