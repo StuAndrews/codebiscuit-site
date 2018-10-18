@@ -4,12 +4,6 @@ import Script from "react-load-script";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-let stylePhotoAttr = {
-    fontStyle: 'italic',
-    textAlign: 'center',
-    fontSize: '14px',
-}
-
 let urlImageOne = 'https://unsplash.com/photos/ASKeuOZqhYU';
 
 const GetInTouch = () => (
@@ -24,11 +18,8 @@ const GetInTouch = () => (
         render={data => (
             <Layout>
                 <div dangerouslySetInnerHTML={{__html: `<script type="text/javascript">(function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>`, }}></div>
-                <h2>We'd love to hear from you!</h2>
-                <p style={stylePhotoAttr}>
-                    <a href={urlImageOne}><Img fluid={data.image1.childImageSharp.fluid} alt="Photo by Jason Rosewell"/></a>
-                    <br/>Photo by Jason Rosewell
-                </p>
+                <h1>We'd love to hear from you!</h1>
+                <p><a href={urlImageOne}><Img fluid={data.image1.childImageSharp.fluid} alt=""/></a></p>
                 <Script url="https://paperform.co/__embed" />
                 <div data-paperform-id="mmgyqlli"></div>
             </Layout>

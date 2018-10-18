@@ -8,7 +8,7 @@ module.exports = {
             {
                 name: 'Home',
                 link: '/',
-                description: 'Go back home',
+                description: 'Back home',
             },
             {
                 name: 'Your Data',
