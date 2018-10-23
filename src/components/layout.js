@@ -31,16 +31,18 @@ const Layout = ({ children }) => (
         >
           <html lang="en"/> 
         </Helmet>
-          <Header />
-          <div className="content-main"
-            style={{
-              padding: '0px 1.0875rem 1.45rem',
-              paddingTop: 0,
-            }}
-          >
-            {children}
+          <div className="content-body">
+            <Header />
+            <div className="content-main"
+              style={{
+                padding: '0px 1.0875rem 1.45rem',
+                paddingTop: 0,
+              }}
+            >
+              {children}
+            </div>
+            <Footer />
           </div>
-          <Footer />
       </React.Fragment>
     )}
   />
