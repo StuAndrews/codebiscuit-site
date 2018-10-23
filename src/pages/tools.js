@@ -2,13 +2,16 @@ import React from "react"
 import Layout from "../components/layout";
 import Img from "gatsby-image";
 
-let urlImageOne = "https://unsplash.com/photos/YVT5aF2QM7M";
-
 export default ({data}) => (
     <Layout>
-        <div>
+        <Img 
+            className="bg-fix"
+            css={{ top: 0, left: 0, right: 0, bottom: 0 }}
+            style={{position: 'absolute' }}
+            fluid={data.imageBackground.childImageSharp.fluid}
+        />
+        <div className="content-page content-page-light">
             <h1>So many tools to choose from</h1>
-            <p><a href={urlImageOne}><Img fluid={data.image1.childImageSharp.fluid} alt=""/></a></p>
             <p>The world around us is growing technology at an incredible rate, and it should not be on your shoulders
                 to stress and worry about which tools are the best to help your business.
             </p>
@@ -31,7 +34,7 @@ export default ({data}) => (
 
 export const query = graphql`
     query ToolsQuery {
-        image1:file(relativePath: { eq: "lachlan-donald-617456-unsplash.jpg" }) {
+        imageBackground:file(relativePath: { eq: "tools-bg.jpg" }) {
             ...postImage
         }
     }

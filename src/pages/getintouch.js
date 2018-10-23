@@ -4,13 +4,11 @@ import Script from "react-load-script";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-let urlImageOne = 'https://unsplash.com/photos/ASKeuOZqhYU';
-
 const GetInTouch = () => (
     <StaticQuery
         query={ graphql`
             query GetInTouchQuery {
-                image1:file(relativePath: { eq: "jason-rosewell-60014-unsplash.jpg" }) {
+                imageBackground:file(relativePath: { eq: "jason-rosewell-60014-unsplash.jpg" }) {
                 ...postImage
                 }
             }
@@ -18,10 +16,17 @@ const GetInTouch = () => (
         render={data => (
             <Layout>
                 <div dangerouslySetInnerHTML={{__html: `<script type="text/javascript">(function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>`, }}></div>
-                <h1>We'd love to hear from you!</h1>
-                <p><a href={urlImageOne}><Img fluid={data.image1.childImageSharp.fluid} alt=""/></a></p>
-                <Script url="https://paperform.co/__embed" />
-                <div data-paperform-id="mmgyqlli"></div>
+                <Img 
+                    className="bg-fix"
+                    css={{ top: 0, left: 0, right: 0, bottom: 0 }}
+                    style={{position: 'absolute' }}
+                    fluid={data.imageBackground.childImageSharp.fluid}
+                />
+                <div className="content-page content-page-light content-page-getintouch">
+                    <h2>We'd love to hear from you!</h2>
+                    <Script url="https://paperform.co/__embed" />
+                    <div data-paperform-id="mmgyqlli"></div>
+                </div>
             </Layout>
         )}
     />

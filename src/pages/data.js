@@ -2,13 +2,16 @@ import React from "react"
 import Layout from "../components/layout";
 import Img from "gatsby-image";
 
-let urlImageOne = "https://unsplash.com/photos/HcZXiWL_piM";
-
 export default ({data}) => (
     <Layout>
-        <div>
+        <Img 
+            className="bg-fix"
+            css={{ top: 0, left: 0, right: 0, bottom: 0 }}
+            style={{position: 'absolute' }}
+            fluid={data.imageBackground.childImageSharp.fluid}
+        />
+        <div className="content-page content-page-light">
             <h1>Healthy data grows your business</h1>
-            <p><a href={urlImageOne}><Img fluid={data.image1.childImageSharp.fluid} alt=""/></a></p>
             <p>
                 If you want to understand something start measuring it.
             </p>
@@ -28,7 +31,7 @@ export default ({data}) => (
 
 export const query = graphql`
     query DataQuery {
-        image1:file(relativePath: { eq: "rawpixel-983726-unsplash.jpg" }) {
+        imageBackground:file(relativePath: { eq: "data-bg.jpg" }) {
             ...postImage
         }
     }

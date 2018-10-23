@@ -9,7 +9,7 @@ import "./layout.css";
 
 //let loadPaperForm = '<script type="text/javascript">(function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>';
 
-const Layout = ({ children }) => (
+const Layout = ({ children, location }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -31,18 +31,16 @@ const Layout = ({ children }) => (
         >
           <html lang="en"/> 
         </Helmet>
-        <Header />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 640,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
-        >
-          {children}
-        </div>
-        <Footer />
+          <Header />
+          <div className="content-main"
+            style={{
+              padding: '0px 1.0875rem 1.45rem',
+              paddingTop: 0,
+            }}
+          >
+            {children}
+          </div>
+          <Footer />
       </React.Fragment>
     )}
   />
@@ -58,7 +56,6 @@ fragment postImage on File {
         fluid(maxWidth: 1280) {
             ...GatsbyImageSharpFluid
         }
-        
     }
 }
 fragment logoImage on File {

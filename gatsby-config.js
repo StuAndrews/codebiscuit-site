@@ -8,22 +8,32 @@ module.exports = {
             {
                 name: 'Home',
                 link: '/',
-                description: 'Back home',
+                description: '',
             },
             {
-                name: 'Your Data',
+                name: 'Data',
                 link: '/data',
                 description: 'Because good healthy data is the lifeblood of your business',
             },
             {
-                name: 'Your Tools',
+                name: 'Tools + Training',
                 link: '/tools',
-                description: 'Because the best tools are critical to your business',
+                description: 'Because the best tools and knowing how to use them well matters',
+            },
+            {
+                name: 'Blog',
+                link: '/blog',
+                description: "Providing thought-leadership in business tech",
             },
             {
                 name: 'Get In Touch',
                 link: '/getintouch',
                 description: "We'd love to hear from you",
+            },
+            {
+                name: 'Phone +614 2992 3075',
+                link: 'tel:+61429923075',
+                description: 'Give us a call',
             }
         ]
     },
