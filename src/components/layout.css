@@ -69,7 +69,7 @@
 .content-page {
     max-width: 500px;
     margin-top: 2rem;
-    min-height: 350px;
+    min-height: 500px;
 }
 .content-page-light {
     color: white;
