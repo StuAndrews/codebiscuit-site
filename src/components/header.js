@@ -39,7 +39,7 @@ const Header = () => (
                             to={link.link}
                             style={{ textDecoration: 'none', }}
                           >
-                          <Img fluid={data.imageLogo.childImageSharp.fluid} alt={link.name}/>
+                          <Img fixed={data.imageLogo.childImageSharp.fixed} alt={link.name}/>
                         </Link>
                         </div>
                       </li>

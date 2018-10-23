@@ -9,7 +9,7 @@ import "./layout.css";
 
 //let loadPaperForm = '<script type="text/javascript">(function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>';
 
-const Layout = ({ children, location }) => (
+const Layout = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -60,8 +60,8 @@ fragment postImage on File {
 }
 fragment logoImage on File {
     childImageSharp {
-        fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid
+        fixed(width: 96) {
+            ...GatsbyImageSharpFixed
         }
     }
 }

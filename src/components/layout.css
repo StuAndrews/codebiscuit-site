@@ -25,7 +25,8 @@
 
 .header {
     margin-bottom: 1.45rem;
-    background-color: rgba(42,37,103,0.5);
+    background-color: rgba(42,37,103,0.75);
+    padding-top: 1rem;
 }
 .header-opaque {
     margin-bottom: 1.45rem;
@@ -33,6 +34,10 @@
 }
 
 .footer {
+    position: absolute;
+    left: 0;
+    
+    right: 0;
     margin-top: 1.45rem;
     padding-top: 1.5rem;
     background-color: white;
@@ -69,7 +74,6 @@
 .content-page {
     max-width: 500px;
     margin-top: 2rem;
-    min-height: 500px;
 }
 .content-page-light {
     color: white;
