@@ -8,7 +8,7 @@ const GetInTouch = () => (
     <StaticQuery
         query={ graphql`
             query GetInTouchQuery {
-                imageBackground:file(relativePath: { eq: "jason-rosewell-60014-unsplash.jpg" }) {
+                imageBackground:file(relativePath: { eq: "getintouch-bg.jpg" }) {
                 ...postImage
                 }
             }
