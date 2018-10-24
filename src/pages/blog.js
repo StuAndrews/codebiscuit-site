@@ -10,7 +10,7 @@ export default ({data}) => (
             style={{position: 'absolute' }}
             fluid={data.imageBackground.childImageSharp.fluid}
         />
-        <div className="content-page content-page-light">
+        <div className="content-page content-page-light content-page-light-container">
             <h1>Thought-Leadership in Business Tech</h1>
             <p>
                 Thoughts on Business Tech and how it is ...

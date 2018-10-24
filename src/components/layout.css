@@ -90,6 +90,8 @@ body {
 }
 .content-page-light {
     color: white;
+}
+.content-page-light-container {
     background-color: rgba(0,0,0,.5);
     padding: 1rem;
 }

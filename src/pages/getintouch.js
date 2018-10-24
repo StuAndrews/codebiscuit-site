@@ -22,7 +22,7 @@ const GetInTouch = () => (
                     style={{position: 'absolute' }}
                     fluid={data.imageBackground.childImageSharp.fluid}
                 />
-                <div className="content-page content-page-light content-page-getintouch">
+                <div className="content-page content-page-light content-page-light-container content-page-getintouch">
                     <h2>We'd love to hear from you!</h2>
                     <Script url="https://paperform.co/__embed" />
                     <div data-paperform-id="mmgyqlli"></div>
