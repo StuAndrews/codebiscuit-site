@@ -11,20 +11,15 @@ export default ({data}) => (
             fluid={data.imageBackground.childImageSharp.fluid}
         />
         <div className="content-page content-page-light">
-            <h1>Healthy data grows your business</h1>
-            <p>
-                If you want to understand something start measuring it.
-            </p>
-            <p>
-                More than ever the data that our businesses use is critical to success (or failure if bad).
-                 Good, healthy data gives a fertile ground that when combined with the best tools brings the
-                 absolute most benefit to your business.
-            </p>
-            <p>
+            <h2>Healthy data grows your business</h2>
+            <div className="text-big">
+                If you want to understand something <strong>start measuring it</strong>.
+            </div>
+            <div className="text-regular">
                 At CodeBiscuit we bring an ever-growing wealth of data experience that allows us to determine the most optimal way
                  forward for moving to a new CRM, analysis of your existing data, or bespoke functionality such as
                  custom exporting or importing.
-            </p>
+            </div>
         </div>
     </Layout>
 )

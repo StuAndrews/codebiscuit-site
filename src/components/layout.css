@@ -1,4 +1,4 @@
-/* Body */
+/* Elements */
 body {
     background-color: #ffffff;
 }
@@ -90,6 +90,8 @@ body {
 }
 .content-page-light {
     color: white;
+    background-color: rgba(0,0,0,.5);
+    padding: 1rem;
 }
 .content-page-dark {
     color: #333;   
