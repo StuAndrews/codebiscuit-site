@@ -26,10 +26,14 @@ const Header = () => (
     render={data => (
       <React.Fragment>
         <div className="header">
-          <div className="menu1 content-main">
+          <div className="menu1">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
             <nav style={{ display: 'flex', flex: 1, alignItems: 'center', justifyContent: 'space-evenly', }}>
               {
-                data.site.siteMetadata.menuLinks.map((link, i) => {   
+                data.site.siteMetadata.menuLinks.map((link, i) => {
                   menuLinksTotal = data.site.siteMetadata.menuLinks.length;
                   if (link.name === 'Home') {
                     return <React.Fragment>
