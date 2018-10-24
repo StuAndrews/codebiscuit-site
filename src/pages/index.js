@@ -13,10 +13,13 @@ export default ({data}) => (
         />
         <div className="content-page content-page-light">
             <div className="text-big">
-                At CodeBiscuit we provide you with the technology IQ to achieve your goals, realise your dreams and <strong>turn your ideas into reality.</strong>
+                At CodeBiscuit we provide you with the technology IQ to achieve your goals,
+                 realise your dreams and <strong>turn your ideas into reality.</strong>
             </div>
             <div className="text-regular">
-                In other words we help you build and maintain your projects, develop solutions to existing problems and provide analysis, review, recommendations (ways forward) and reporting on your business technology processes.
+                In other words we help you build and maintain your projects, develop solutions
+                 to existing problems and provide analysis, recommendations (ways forward)
+                 and reporting on your business technology processes and your data.
             </div>
             <div className="text-regular segment-getintouch"><Link to="getintouch" style={{ textDecoration: 'none' }}><button>Get In Touch</button></Link></div>
         </div>
