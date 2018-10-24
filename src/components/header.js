@@ -52,7 +52,7 @@ const Header = () => (
                       </li>
                     </React.Fragment>
                   } else if (menuLinksTotal === i+1) {
-                    return <li className="small-screen" key={link.name} style={{ 'listStyleType': 'none', paddingLeft: 5, }} >
+                    return <li key={link.name} style={{ 'listStyleType': 'none', paddingLeft: 5, }} >
                       <a href={link.link} class="cb-green-color" style={{ textDecoration: 'none', }}>{link.name}</a>
                     </li>
                   } else {
