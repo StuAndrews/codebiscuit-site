@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 
 export default () => (
     <Layout>
-        <div>
+        <div className="content-page">
             <h1>Privacy Policy</h1>
             <ol>
                 <li>
