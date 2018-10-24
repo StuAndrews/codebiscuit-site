@@ -17,7 +17,7 @@ const GetInTouch = () => (
             <Layout>
                 <div dangerouslySetInnerHTML={{__html: `<script type="text/javascript">(function() { var script = document.createElement("script"); script.src = "https://paperform.co/__embed";document.body.appendChild(script); })()</script>`, }}></div>
                 <Img 
-                    className="bg-fix"
+                    className="bg-fix-getintouch"
                     css={{ top: 0, left: 0, right: 0, bottom: 0 }}
                     style={{position: 'absolute' }}
                     fluid={data.imageBackground.childImageSharp.fluid}

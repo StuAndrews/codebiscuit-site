@@ -1,3 +1,9 @@
+/* Body */
+body {
+    background-color: #ccc;
+}
+
+/* Menu */
 .menu1>img {
     padding: 7px 14px;
 }
@@ -16,14 +22,18 @@
     display:none;
 }
 
+/* Background Image Fix */
 .bg-fix { top:0; left:0; right:0; bottom:0; z-index: -1; }
+.bg-fix-getintouch { top:0; left:0; right:0; bottom:0; z-index: -1; }
 
+/* Code Biscuit Specifics */
 .cb-green-color { color: #A6CE3A !important; }
 .cb-green-bgcolor { background-color: #A6CE3A; }
 
 .cb-blue-color { color: #2A2567; }
 .cb-blue-bgcolor { background-color: #2A2567; }
 
+/* Header */
 .header {
     margin-bottom: 1.45rem;
     background-color: rgba(42,37,103,0.8);
@@ -34,6 +44,7 @@
     background-color: #2A2567;
 }
 
+/* Footer */
 .footer {
     position: absolute;
     left: 0;
@@ -68,6 +79,7 @@
     font-weight: bold !important;
 }
 
+/* Content */
 .content-main {
     max-width: 900px;
     margin: 0 auto;
@@ -81,9 +93,6 @@
 }
 .content-page-dark {
     color: #333;   
-}
-.content-page-getintouch {
-    
 }
 .text-big {
     font-size: 1.5em;
@@ -108,10 +117,11 @@ button:hover {
     color: #BAE542;
 }
 
-/*
+/******************
     SMALL VIEWS
-*/
-@media screen and (max-width: 1024px) {
+    - IMPORTANT: All general css to be put above this
+******************/
+@media screen and (max-width: 900px) {
     .small-screen-hide {
         display: none;
     }
@@ -202,8 +212,6 @@ button:hover {
         background-color: #2A2567;
         align-items: stretch !important;
     }
-    .menu1 li {
-    }
     .menu1 input:checked ~ nav {
         transform: none;
     }
@@ -218,4 +226,8 @@ button:hover {
         padding-left: 1em;
         padding-right: 0;
     }
+
+    /* Background Image Fix */
+    .bg-fix { height: 600px !important;}
+    .bg-fix-getintouch { height: 1100px !important;}
 }
