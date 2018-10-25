@@ -234,4 +234,9 @@ button:hover {
     /* Background Image Fix */
     .bg-fix { height: 600px !important;}
     .bg-fix-getintouch { height: 1100px !important;}
+
+    .content-page-light {
+        background-color: rgba(0,0,0,.7);
+        padding: 1rem;
+    }
 }
