@@ -23,8 +23,14 @@ body {
 }
 
 /* Background Image Fix */
-.bg-fix { top:0; left:0; right:0; bottom:0; z-index: -1; }
-.bg-fix-getintouch { top:0; left:0; right:0; bottom:0; z-index: -1; }
+.bg-fix { 
+    top:0; left:0; right:0; bottom:0; z-index: -1;
+    min-height: calc(100vh - 431px);
+}
+.bg-fix-getintouch { 
+    top:0; left:0; right:0; bottom:0; z-index: -1;
+    min-height: calc(100vh);
+}
 
 /* Code Biscuit Specifics */
 .cb-green-color { color: #A6CE3A !important; }
@@ -233,8 +239,8 @@ button:hover {
     }
 
     /* Background Image Fix */
-    .bg-fix { height: 600px !important;}
-    .bg-fix-getintouch { height: 1100px !important;}
+    /*.bg-fix { height: 700px !important;}
+    .bg-fix-getintouch { height: 1100px !important;}*/
 
     .content-page-light {
         background-color: rgba(0,0,0,.7);
