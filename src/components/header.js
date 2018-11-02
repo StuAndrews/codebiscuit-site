@@ -50,15 +50,19 @@ const Header = () => (
                       <li key={link.name+"2"} style={{ 'listStyleType': 'none', paddingLeft: 5, }} >
                         <Link to={link.link} style={{ textDecoration: 'none', color: 'white', }}>{link.name}</Link>
                       </li>
+                      <li divider></li>
                     </React.Fragment>
                   } else if (menuLinksTotal === i+1) {
                     return <li key={link.name} style={{ 'listStyleType': 'none', paddingLeft: 5, }} >
                       <a href={link.link} class="cb-green-color" style={{ textDecoration: 'none', }}>{link.name}</a>
                     </li>
                   } else {
-                    return <li key={link.name} style={{ 'listStyleType': 'none', paddingLeft: 5, }} >
-                      <Link to={link.link} style={{ textDecoration: 'none', color: 'white', }}>{link.name}</Link>
-                    </li>
+                    return <React.Fragment>
+                      <li key={link.name} style={{ 'listStyleType': 'none', paddingLeft: 5, }} >
+                        <Link to={link.link} style={{ textDecoration: 'none', color: 'white', }}>{link.name}</Link>
+                      </li>
+                      <li divider></li>
+                      </React.Fragment>
                   }
                 })
               }

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
@@ -22,13 +22,10 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <React.Fragment>
-        <Helmet
-          title={data.site.siteMetadata.title}
-          meta={[
-            { name: 'description', content: 'The best tech byte for your business' },
-            { name: 'keywords', content: 'business technology, data hunters, training, technology solutions, it project, systems review, problem solving' },
-          ]}
-        >
+        <Helmet>
+          <title>{data.site.siteMetadata.title}</title>
+          <meta name="description" content="The best tech byte for your business"/>
+          <meta name="keywords" content="business technology, data hunters, training, technology solutions, it project, systems review, problem solving"/>
           <html lang="en"/> 
         </Helmet>
           <div className="content-body">

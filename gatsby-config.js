@@ -4,6 +4,12 @@ module.exports = {
     siteMetadata: {
         title: 'Code Biscuit',
         siteUrl: 'https://codebiscuit.com',
+        author: {
+            minibio: `
+                <strong>Code Biscuit</strong> is run by <strong>Stu & Rach Andrews</strong>, passionate
+                Business IT evangelists and thought-leaders. They live in Sydney, Australia.
+            `,
+        },
         menuLinks: [
             {
                 name: 'Home',
@@ -30,11 +36,6 @@ module.exports = {
                 link: '/getintouch',
                 description: "We'd love to hear from you",
             },
-            {
-                name: 'Phone +614 2992 3075',
-                link: 'tel:+61429923075',
-                description: 'Give us a call',
-            }
         ]
     },
     plugins: [

@@ -8,10 +8,12 @@ body {
     padding: 7px 14px;
 }
 .menu1 {
-    max-width: 900px;
+    max-width: 1200px;
     margin: 0 auto;
+    color: #ffffff;
 }
 .menu1 a {
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
