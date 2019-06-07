@@ -7,7 +7,7 @@ module.exports = {
         author: {
             minibio: `
                 <strong>Code Biscuit</strong> is run by <strong>Stu & Rach Andrews</strong>, passionate
-                Business IT evangelists and thought-leaders. They live in Sydney, Australia.
+                business IT evangelists and thought-leaders. They live in Sydney, Australia.
             `,
         },
         menuLinks: [
