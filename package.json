@@ -8,8 +8,9 @@
     "serve": "gatsby serve"
   },
   "dependencies": {
-    "gatsby": "^2.14.4",
-    "gatsby-cli": "^2.7.40",
+    "core-js": "^3.6.5",
+    "gatsby": "^2.23.1",
+    "gatsby-cli": "^2.12.44",
     "gatsby-image": "^2.2.14",
     "gatsby-link": "^2.2.10",
     "gatsby-plugin-core-js": "^1.0.2",
@@ -19,8 +20,6 @@
     "gatsby-source-filesystem": "^2.1.18",
     "gatsby-transformer-sharp": "^2.2.12",
     "outdated": "^0.1.1",
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0",
     "react-helmet": "^5.2.1",
     "react-load-script": "0.0.6",
     "react-obfuscate": "^3.6.2",
@@ -30,6 +29,14 @@
     "typography-theme-funston": "^0.15.10"
   },
   "devDependencies": {
+    "@jimp/custom": "^0.13.0",
+    "@jimp/plugin-blur": "^0.13.0",
+    "@jimp/plugin-color": "^0.13.0",
+    "@jimp/plugin-resize": "^0.13.0",
+    "acorn": "^6.4.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.8.1",
+    "react-refresh": "^0.8.2",
     "url-loader": "^2.1.0"
   }
 }
